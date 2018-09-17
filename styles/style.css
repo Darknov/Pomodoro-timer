@@ -59,12 +59,6 @@ body {
 .grid #timer {
   text-align: center;
   font-size: 300%;
-
-  text-decoration: none;
-}
-
-.grid input {
-  outline: 0;
 }
 
 .grid button {
@@ -72,6 +66,9 @@ body {
   font-size: 200%;
   width: 100%;
   height: 100%;
+
+  -webkit-transition-duration: 0.2s; /* Safari */
+  transition-duration: 0.2s;
 }
 
 .grid button:hover {
@@ -80,10 +77,19 @@ body {
 
 .grid button:focus {
   outline: 0;
+  
+}
+
+.grid button:active {
+  background-color: #af2222;
 }
 
 .grid footer {
   grid-column: col / span 3;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 footer {
