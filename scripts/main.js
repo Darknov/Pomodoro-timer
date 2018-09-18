@@ -5,4 +5,3 @@ const times = {
 
   currentTime: "00:00"
 };
-
