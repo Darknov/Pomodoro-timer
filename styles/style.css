@@ -54,6 +54,11 @@ footer {
 
 .icon {
   border-width: 0px 2px 0px 0px;
-  border-color: rgba(0, 0, 0, 0.15); 
+  border-color: rgba(0, 0, 0, 0.15);
   border-style: solid;
+}
+
+#timer {
+  width: max-content;
+  margin: auto;
 }
