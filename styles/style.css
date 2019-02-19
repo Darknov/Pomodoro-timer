@@ -21,6 +21,15 @@ footer {
   text-align: center;
 }
 
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 .app {
   padding: 10px;
   background-color: #ecf0f1;
@@ -34,10 +43,10 @@ footer {
 }
 
 .buttons {
-  padding: 10px;
+  padding-right: 30px;
 }
 
-.row {
+.buttons > .row {
   display: flex;
   width: 100%;
 }
@@ -61,4 +70,20 @@ footer {
 #timer {
   width: max-content;
   margin: auto;
+}
+
+#list {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  height: max-content;
+}
+
+#list > div{
+  /* padding: 10px; */
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);;
+}
+
+.list-row {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);;
 }
