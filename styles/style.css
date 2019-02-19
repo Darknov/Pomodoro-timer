@@ -1,97 +1,59 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css");
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  background-color: #33d9b2;
+  padding: 0;
+  min-height: 100%;
+
+  background-color: #27ae60;
 }
 
-#app {
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
 
-
-  margin: 3%;
-  background-color: #b33939;
-
-  border-color: black;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 5px;
-
+.app {
   padding: 10px;
+  background-color: #ecf0f1;
 }
 
-#app .grid {
-  display: grid;
-  grid-template-columns: [col] auto [col] auto [col] auto;
-  grid-gap: 20px;
+.menu {
   margin: 10px;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
 }
 
-.grid>* {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.grid>*>* {
-  background-color: #ff5252;
-
-  border-radius: 5px;
-  border-style: solid;
-  border-color: black;
-  border-width: 3px;
-
-  text-align: center;
+.buttons {
   padding: 10px;
 }
 
-.grid .header-container {
-  grid-column: col / span 3;
-}
-
-.grid header {
-  text-transform: uppercase;
-  font-size: 300%;
-}
-
-.grid .timer-container {
-  grid-column: col / span 3;
-}
-
-.grid #timer {
-  text-align: center;
-  font-size: 300%;
-}
-
-.grid button {
-  text-decoration: none;
-  font-size: 200%;
+.row {
+  display: flex;
   width: 100%;
-  height: 100%;
-
-  -webkit-transition-duration: 0.2s; /* Safari */
-  transition-duration: 0.2s;
 }
 
-.grid button:hover {
-  background-color: #ff8282;
-}
-
-.grid button:focus {
-  outline: 0;
-  
-}
-
-.grid button:active {
-  background-color: #af2222;
-}
-
-.grid footer {
-  grid-column: col / span 3;
+.button {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 .shadow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-footer {
-  font-size: 10px;
-  text-align: center;
+.icon {
+  border-width: 0px 2px 0px 0px;
+  border-color: rgba(0, 0, 0, 0.15); 
+  border-style: solid;
 }
